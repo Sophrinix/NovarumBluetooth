@@ -385,8 +385,7 @@ public class NovarumbluetoothModule extends KrollModule
 	private  byte[] getFirst128Bytes(String data) throws Exception {
 		
 		byte[] dataBytes = data.getBytes();
-		System.out.println(" length " + dataBytes.length);
-	       if(dataBytes.length >= 128 ){
+
 		      byte[] first128Bytes = new byte[128];
 
 	        for (int i = 0;  i < 128 ; i++)
@@ -572,7 +571,7 @@ public class NovarumbluetoothModule extends KrollModule
 						}
 
 					} 
-					catch (IOException e) 
+					catch (Exception e) 
 					{
 						postError(e.getMessage());
 					}
