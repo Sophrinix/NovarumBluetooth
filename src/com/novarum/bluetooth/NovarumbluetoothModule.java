@@ -346,9 +346,9 @@ public class NovarumbluetoothModule extends KrollModule
 			try
 			{
 				bluetoothDevice.setPin("1234".getBytes());
-			catch(Exception e)
+			}catch(Exception e)
 			{
-				postError("bluetoothDevice.setPin("1234".getBytes()): " + e.getMessage());
+				postError("bluetoothDevice.setPin(\"1234\".getBytes()): " + e.getMessage());
 			}
 			if (bluetoothDevice.getBondState() == BluetoothDevice.BOND_NONE) 
 			{
